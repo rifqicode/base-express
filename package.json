@@ -1,0 +1,31 @@
+{
+  "name": "expressjs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.9.20",
+    "morgan": "~1.9.1"
+  },
+  "description": "base express.js",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rifqicode/express.js.git"
+  },
+  "author": "rifqicode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rifqicode/express.js/issues"
+  },
+  "homepage": "https://github.com/rifqicode/express.js#readme"
+}
