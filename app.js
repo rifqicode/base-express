@@ -4,9 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var db = require('./config/database');
+var { PORT } = require('./config/config.js');
 
 // call the database connectivity function
-db();
+// db();
 
 var exampleRouter = require('./routes/example/example');
 
@@ -39,5 +40,9 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`)
+})
 
 module.exports = app;
